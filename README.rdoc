@@ -1,3 +1,32 @@
-= custom_fields_addin
+= Custom fields addon
 
-This is a simple addin for 'Computed custom field'. 
+This is a simple addon for {'Computed custom field'}[https://github.com/annikoff/redmine_plugin_computed_custom_field].
+
+=== Use
+
+Create two key-value comboboxes (combobox1 id=1; combobox2 id=2). 
+Combobox1 fill next values: 
+* Programmists (value id=1)
+* Designers (value id=2)
+* Testers (value id=3)
+Combobox2 fill next values:
+* issue_custom_field_values_1#cfa#1|John Smith
+* issue_custom_field_values_1#cfa#1|Ritchie Elijah
+* issue_custom_field_values_1#cfa#1|Scottie Wilfrid
+* issue_custom_field_values_1#cfa#1|Quinten Willie
+* issue_custom_field_values_1#cfa#2|Avril Lesia
+* issue_custom_field_values_1#cfa#2|Katriona Ellis
+* issue_custom_field_values_1#cfa#2|Sage Clinton
+* issue_custom_field_values_1#cfa#2|Cree Lennon
+* issue_custom_field_values_1#cfa#3|Bryn Brigham
+* issue_custom_field_values_1#cfa#3|Burton Jaydon
+* issue_custom_field_values_1#cfa#1;2;3|Boris Godfrey
+
+example:
+combobox1_id#cfa#combobox1_value1;combobox1_value2|combobox2_display_value
+
+* combobox1_id - select or input id
+
+* combobox1_value1;combobox1_value2 - list values combobox1 separeted ';'
+
+* combobox2_display_value - value to display on issue preview and edit.
